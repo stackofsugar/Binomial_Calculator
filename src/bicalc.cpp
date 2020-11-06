@@ -56,7 +56,7 @@ void Bicalc::printres(){
     cout << "Cumulative: " << endl;
     long double sum = 0;
     for (int i = 0; i <= x; i++){
-        cout << fixed << "P(X = " << i << ") = " 
+        cout << fixed << setprecision(numeric_limits<long double>::digits10 + 1) << "P(X = " << i << ") = " 
              << resvec[i] << endl;
         sum += resvec[i];
     }
