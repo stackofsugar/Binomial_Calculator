@@ -1,3 +1,5 @@
+#pragma once
+#include <vector>
 class Bicalc {
     private:
         int n,x;
